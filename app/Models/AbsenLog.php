@@ -9,5 +9,6 @@ class AbsenLog extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
     protected $table = 'absen_log';
 }
