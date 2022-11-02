@@ -22,61 +22,107 @@
 </div>
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
-        <div class="col-lg-12">
-            <div class="ibox ">
-                <div class="ibox-title">
-                    <h5>Basic Data Tables example with responsive plugin</h5>
-                    <div class="ibox-tools">
-                        <a class="collapse-link">
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-wrench"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#" class="dropdown-item">Config option 1</a>
-                            </li>
-                            <li><a href="#" class="dropdown-item">Config option 2</a>
-                            </li>
-                        </ul>
-                        <a class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
+        <div class="col-lg-2">
+            <div class="widget style1 blue-bg">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-calendar-check-o fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        <span> Masuk </span>
+                        <h2 class="font-bold">26</h2>
                     </div>
                 </div>
-                <div class="ibox-content">
-
-                    <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover dataTables-example">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($data as $item)
-                                    <tr> 
-                                        <td>{{$loop->index+1  }}</td>
-                                        <td>{{$item['nama_dept']}}</td>
-                                        <td>
-                                            <button class="btn btn-primary">Lihat</button>
-                                            <button class="btn btn-danger">Hapus</button>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Action</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="widget style1 bg-info">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-bell-slash fa-5x"></i>
                     </div>
-
+                    <div class="col-8 text-right">
+                        <span> Izin </span>
+                        <h2 class="font-bold">26</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="widget style1 bg-info">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-hotel fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        <span> Sakit </span>
+                        <h2 class="font-bold">260</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="widget style1 bg-info">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-calendar-o fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        <span> Cuti </span>
+                        <h2 class="font-bold">12</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="widget style1 bg-info">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-car fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        <span> Perjalanan Dinas </span>
+                        <h2 class="font-bold">12</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="widget style1 bg-danger">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fa fa-calendar-times-o fa-5x"></i>
+                    </div>
+                    <div class="col-8 text-right">
+                        <span> Tidak Masuk </span>
+                        <h2 class="font-bold">12</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-lg-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Daftar Kehadiran <small>Diagram Balok</small></h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <canvas id="barChart" height="125"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Presensi Hari Ini</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="flot-chart">
+                        <div class="flot-chart-pie-content" id="flot-pie-chart" height="125"></div>
+                    </div>
                 </div>
             </div>
         </div>

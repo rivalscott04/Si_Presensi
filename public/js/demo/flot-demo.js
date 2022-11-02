@@ -102,21 +102,29 @@ $(function() {
 $(function() {
 
     var data = [{
-        label: "Sales 1",
-        data: 21,
+        label: "Masuk",
+        data: 100,
         color: "#d3d3d3",
     }, {
-        label: "Sales 2",
-        data: 3,
+        label: "Izin",
+        data: 5,
         color: "#bababa",
     }, {
-        label: "Sales 3",
-        data: 15,
+        label: "Sakit",
+        data: 9,
         color: "#79d2c0",
     }, {
-        label: "Sales 4",
+        label: "Cuti",
+        data: 14,
+        color: "#2bb394",
+    }, {
+        label: "Perjadin",
         data: 52,
-        color: "#1ab394",
+        color: "#1ac494",
+    }, {
+        label: "Tidak Masuk",
+        data: 52,
+        color: "#1ab305",
     }];
 
     var plotObj = $.plot($("#flot-pie-chart"), data, {

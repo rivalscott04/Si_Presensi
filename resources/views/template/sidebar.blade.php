@@ -14,8 +14,8 @@
                             UNRAM
                         </div>
                     </li>
-                    <li class= {{$loc == 'coba' ? "active" : "1"}}>
-                        <a href="/coba"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                    <li class= {{$loc == '/' ? "active" : "1"}}>
+                        <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
                     </li>
                     <li  class={{$loc == 'rekap' ? "active" : "2"}}>
                         <a href="/rekap"><i class="fa fa-th-large"></i> <span class="nav-label">Rekap</span></a>

@@ -2,22 +2,14 @@ $(function () {
 
 
     var barData = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["Masuk", "Izin", "Sakit", "Cuti", "Perjadin", "Tidak Masuk"],
         datasets: [
             {
                 label: "Data 1",
-                backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                backgroundColor: 'rgba(140, 73, 28, 0.7)',
                 pointBorderColor: "#fff",
-                data: [65, 59, 80, 81, 56, 55, 40]
+                data: [65, 59, 80, 81, 56, 15]
             },
-            {
-                label: "Data 2",
-                backgroundColor: 'rgba(26,179,148,0.5)',
-                borderColor: "rgba(26,179,148,0.7)",
-                pointBackgroundColor: "rgba(26,179,148,1)",
-                pointBorderColor: "#fff",
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
         ]
     };
 

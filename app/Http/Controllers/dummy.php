@@ -23,4 +23,11 @@ class dummy extends Controller
         // dd($data);
         return view('fitur.dashboard',compact('loc','data'));
     }
+
+    public function rekap () {
+        $loc = FacadesRoute::getCurrentRoute()->uri;
+        $data = Dept::all();
+        // dd($data);
+        return view('fitur.rekap',compact('loc'));
+    }
 }

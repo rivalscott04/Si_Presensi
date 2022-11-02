@@ -60,6 +60,14 @@ $(function() {
         label: "Safari",
         data: 52,
         color: "#1ab394",
+    }, {
+        label: "Safari",
+        data: 52,
+        color: "#1ab394",
+    }, {
+        label: "Safari",
+        data: 52,
+        color: "#1ab394",
     }];
 
     var plotObj = $.plot($("#flot-pie-chart-browsers"), data, {
@@ -103,6 +111,14 @@ $(function() {
         label: "Client 4",
         data: 52,
         color: "#1ab394",
+    }, {
+        label: "Client 5",
+        data: 52,
+        color: "#9ab394",
+    }, {
+        label: "Client 6",
+        data: 52,
+        color: "#4ab394",
     }];
 
     var plotObj = $.plot($("#flot-pie-chart-sources"), data, {

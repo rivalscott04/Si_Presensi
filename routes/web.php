@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/',[dummy::class,'dashboard']);
-Route::get('/rekap',[dummy::class,'index']);
+Route::get('/rekap',[dummy::class,'rekap']);
 Route::get('/input',[dummy::class,'index']);
