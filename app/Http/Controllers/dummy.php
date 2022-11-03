@@ -30,4 +30,11 @@ class dummy extends Controller
         // dd($data);
         return view('fitur.rekap',compact('loc'));
     }
+
+    public function tambah () {
+        $loc = FacadesRoute::getCurrentRoute()->uri;
+        $data = Dept::all();
+        // dd($data);
+        return view('fitur.tambah',compact('loc'));
+    }
 }
